@@ -25,7 +25,12 @@ class Message extends Structures.get("Message") {
         return this.channel.send(
             content instanceof APIMessage
                 ? content
-                : APIMessage.transformOptions(content, options, { reply: this.member || this.author }),
+                : APIMessage.transformOptions(content, options, {
+                    reply: {
+                        messageReference: this,
+                        failIfNotExists: options?.failIfNotExists ?? content?.failIfNotExists ?? true,
+                    }
+                }),
         );
     }
 
