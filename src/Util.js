@@ -1,9 +1,13 @@
 const styles = {
-    'blurple': 1,
-    'gray': 2,
-    'green': 3,
-    'red': 4,
-    'url': 5
+	'blurple': 1,
+	'gray': 2,
+	'green': 3,
+	'red': 4,
+	'url': 5,
+	'PRIMARY': 1,
+	'SECONDARY': 2,
+	'SUCCESS': 3,
+	'DANGER': 4,
 };
 
 module.exports = {
