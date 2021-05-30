@@ -4,10 +4,6 @@ const styles = {
 	'green': 3,
 	'red': 4,
 	'url': 5,
-	'primary': 1,
-	'secondary': 2,
-	'success': 3,
-	'danger': 4,
 };
 
 module.exports = {
